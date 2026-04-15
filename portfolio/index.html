@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- SEO & OpenGraph Tags for Social Media Previews -->
+  <title>Fathima Sharfida | Microbiologist & Researcher</title>
+  <meta name="description" content="Portfolio of Fathima Sharfida A T, exploring clinical diagnostics, pathogen detection, and sustainable biotechnology.">
+  <meta property="og:title" content="Fathima Sharfida | Microbiologist & Researcher">
+  <meta property="og:description" content="Portfolio of Fathima Sharfida A T, exploring clinical diagnostics, pathogen detection, and sustainable biotechnology.">
+  <meta property="og:image" content="https://fathimabio.vercel.app/assets/bioreactor_lab_1776216222464.png">
+  <meta property="og:url" content="https://fathimabio.vercel.app">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Custom SVG Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M40 15 L60 15 M50 15 L50 35 C20 55, 20 75, 50 90 C80 75, 80 55, 50 35' stroke='%2300d2ff' stroke-width='8' stroke-linecap='round' fill='none'/%3E%3Ccircle cx='50' cy='70' r='10' fill='%238a2be2'/%3E%3C/svg%3E">
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@500;700;800&display=swap" rel="stylesheet">
+  
+  <!-- Icons & Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+  <!-- Custom Cursor -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-follower"></div>
+
+  <!-- 3D WebGL Background (Three.js) -->
+  <div id="webgl-container"></div>
+  
+  <!-- Mouse Spotlight -->
+  <div class="cursor-spotlight"></div>
+
+  <!-- Sticky Download CV Button -->
+  <a href="../v2/cv_fathima_sharfida_v2.docx" class="fab-cv interactable" download>
+    <i class="fa-solid fa-cloud-arrow-down"></i>
+    <span>Download ATS CV</span>
+  </a>
+
+  <!-- Navigation -->
+  <nav class="navbar gsap-nav">
+    <div class="nav-content">
+      <a href="#" class="logo-container interactable">
+        <div class="cool-fs-logo">
+          <span class="f">F</span><span class="s">S</span><span class="dot">.</span>
+        </div>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#about" class="interactable">About</a></li>
+        <li><a href="#skills" class="interactable">Skills</a></li>
+        <li><a href="#experience" class="interactable">Experience</a></li>
+        <li><a href="#journal" class="interactable">Lab Journal</a></li>
+        <!-- Theme Toggle -->
+        <li>
+          <button id="theme-toggle" class="theme-btn interactable" aria-label="Toggle Light/Dark Theme">
+            <i class="fa-solid fa-moon"></i>
+          </button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="hero">
+    <div class="hero-content gsap-hero">
+      <div class="badge">Open to Work</div>
+      <h1 class="hero-title">
+        Hi, I'm <span class="name-display">Fathima Sharfida A T</span><br>
+        <span class="gradient-text">Microbiologist & Researcher</span>
+      </h1>
+      <p class="hero-subtitle">
+        Exploring the unseen. Passionate about clinical diagnostics, pathogen detection, and sustainable biotechnology.
+      </p>
+      <div class="hero-actions">
+        <!-- New Impressive Download Button -->
+        <a href="cv_fathima_sharfida_v2.docx" class="btn-download interactable" download>
+          <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+        </a>
+        <a href="#journal" class="btn-primary interactable">View Lab Journal</a>
+        <a href="#contact" class="btn-secondary interactable">Let's Connect</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about section-padding">
+    <div class="container">
+      <div class="section-title gsap-reveal">
+        <h2>About Me</h2>
+        <div class="line"></div>
+      </div>
+      
+      <div class="about-grid">
+        <div class="about-text glass-card gsap-reveal">
+          <p>I’m a Microbiology graduate from the <strong>University of Calicut (SIAS)</strong>. My focus lies at the intersection of classical microbiological techniques and cutting-edge molecular diagnostics.</p>
+          <p>With hands-on training from <strong>UniBiosys Biotech Research Labs</strong> and certifications in analytical microbiology from NABL-accredited facilities, I strive for precision and sterility in every procedure.</p>
+          <div class="stats">
+            <div class="stat-item">
+              <h3>3+</h3>
+              <span>Certifications</span>
+            </div>
+            <div class="stat-item">
+              <h3>40+</h3>
+              <span>Lab Skills</span>
+            </div>
+            <div class="stat-item">
+              <h3>1</h3>
+              <span>Thesis Project</span>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-visual glass-card focus-card interactable gsap-reveal" style="transition-delay: 0.2s">
+          <div class="visual-placeholder">
+            <i class="fa-solid fa-microscope icon-xl gradient-icon"></i>
+            <h3>Driven by Science</h3>
+            <p>Clinical Diagnostics · Molecular Biology · Food Safety</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills section-padding">
+    <div class="container">
+      <div class="section-title center gsap-reveal">
+        <h2>Technical Arsenal</h2>
+        <div class="line mx-auto"></div>
+      </div>
+      
+      <div class="skills-grid">
+        <div class="skill-category glass-card interactable gsap-reveal">
+          <i class="fa-solid fa-dna skill-icon"></i>
+          <h3>Molecular Biology</h3>
+          <ul class="skill-list">
+            <li class="interactable" data-tooltip="Proficient in thermal cycling and DNA amplification protocols.">PCR Techniques</li>
+            <li class="interactable" data-tooltip="Skilled in nucleic acid isolation from various clinical buffers.">DNA / RNA Extraction</li>
+            <li class="interactable" data-tooltip="Understanding of genetic level pathogen analysis.">Molecular Diagnostics</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category glass-card interactable gsap-reveal" style="transition-delay: 0.1s">
+          <i class="fa-solid fa-vial-virus skill-icon"></i>
+          <h3>Microbial Culturing</h3>
+          <ul class="skill-list">
+            <li class="interactable" data-tooltip="Strict adherence to bio-containment and contamination prevention.">Aseptic Techniques</li>
+            <li class="interactable" data-tooltip="Streak plate methodology and pure culture maintenance.">Colony Isolation</li>
+            <li class="interactable" data-tooltip="Differentiation using crystal violet, iodine, and safranin protocols.">Gram Staining & Microscopy</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category glass-card interactable gsap-reveal" style="transition-delay: 0.2s">
+          <i class="fa-solid fa-flask skill-icon"></i>
+          <h3>Biotechnology</h3>
+          <ul class="skill-list">
+            <li class="interactable" data-tooltip="Utilizing Simulataneous Saccharification and Fermentation (SSF).">Fermentation Technology</li>
+            <li class="interactable" data-tooltip="Optimizing yeast ratios for biofuel output.">Inoculum Preparation</li>
+            <li class="interactable" data-tooltip="Creating bio-ethanol from citrus agro-waste (Mosambi/Lemon peels).">Biofuel Production</li>
+          </ul>
+        </div>
+        
+        <div class="skill-category glass-card interactable gsap-reveal" style="transition-delay: 0.3s">
+          <i class="fa-solid fa-clipboard-check skill-icon"></i>
+          <h3>Quality & Safety</h3>
+          <ul class="skill-list">
+            <li class="interactable" data-tooltip="Routine water, food, and environmental sample analysis.">Analytical Microbiology</li>
+            <li class="interactable" data-tooltip="Familiar with NABL / ISO standard operating procedures.">Food Safety QC</li>
+            <li class="interactable" data-tooltip="Maintaining calibration logs and biosafety documentation.">Lab Safety Protocols</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Education -->
+  <section id="experience" class="timeline-section section-padding">
+    <div class="container">
+      <div class="section-title gsap-reveal">
+        <h2>Experience & Education</h2>
+        <div class="line"></div>
+      </div>
+      
+      <div class="timeline">
+        <!-- The Dynamic Fill -->
+        <div class="timeline-fill"></div>
+
+        <div class="timeline-item gsap-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card hover-glow interactable">
+            <span class="date">April 2026 – Present</span>
+            <h3>Research Assistant Internship</h3>
+            <h4 class="company">UniBiosys Biotech Research Labs</h4>
+            <p>Conducted microbial analysis of food samples, extracted DNA/RNA for PCR, executed standard colony isolation schemes, and enforced strict NABL safety standards.</p>
+          </div>
+        </div>
+        
+        <div class="timeline-item gsap-reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content glass-card hover-glow interactable">
+            <span class="date">Aug 2023 – Mar 2026</span>
+            <h3>BSc Microbiology</h3>
+            <h4 class="company">University of Calicut (SIAS)</h4>
+            <p>Developed expertise in microbial physiology, genetics, biochemistry, and applied food microbiology. Conducted thesis defense on simultaneous saccharification and fermentation.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Lab Journal Gallery with AI Images -->
+  <section id="journal" class="journal section-padding">
+    <div class="container">
+      <div class="section-title center gsap-reveal">
+        <h2>Digital Lab Journal</h2>
+        <div class="line mx-auto"></div>
+        <p class="section-subtitle">Real-world applications of protocols and research methodologies.</p>
+      </div>
+
+      <div class="gallery-grid">
+        <!-- Entry 1 -->
+        <div class="gallery-card image-card interactable gsap-reveal">
+          <img src="assets/gram_stain_lab_1776216034121.png" alt="Gram Stain Lab" class="gallery-img">
+          <div class="gallery-overlay">
+            <h4>Gram Staining Protocol</h4>
+            <p>Utilizing established crystal violet/safranin procedures to differentiate bacterial isolates in food samples. Ensures accurate cellular morphology classification.</p>
+          </div>
+        </div>
+        
+        <!-- Entry 2 -->
+        <div class="gallery-card image-card interactable gsap-reveal" style="transition-delay: 0.1s;">
+          <img src="assets/bioreactor_lab_1776216222464.png" alt="Bioreactor" class="gallery-img">
+          <div class="gallery-overlay">
+            <h4>SSF Bio-reactor Setup</h4>
+            <p>Primary setup for generating bio-ethanol from citrus agro-waste. Enzymatic hydrolysis and yeast fermentation occurring simultaneously in a controlled anaerobic environment.</p>
+          </div>
+        </div>
+
+        <!-- Entry 3 -->
+        <div class="gallery-card image-card interactable gsap-reveal" style="transition-delay: 0.2s;">
+          <img src="assets/pcr_cycler_lab_1776216235706.png" alt="PCR Cycler" class="gallery-img">
+          <div class="gallery-overlay">
+            <h4>PCR Amplification</h4>
+            <p>Running thermal cycling protocols. Strict adherence to contamination-free nucleic acid handling to prevent false positives in molecular diagnostics.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact section-padding">
+    <div class="container">
+      <div class="contact-box glass-card border-glow gsap-reveal interactable">
+        <h2>Let's build the future together.</h2>
+        <p>Currently seeking entry-level, internship, or research roles where precision and continuous learning are valued.</p>
+        
+        <!-- Live Contact Form (Web3Forms) -->
+        <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+          <!-- TODO: Add your Access Key below obtained from web3forms.com -->
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="New Submission from FathimaBio Portfolio">
+          
+          <div class="form-row">
+            <input type="text" name="name" required placeholder="Your Name" class="form-input interactable">
+            <input type="email" name="email" required placeholder="Your Email" class="form-input interactable">
+          </div>
+          <textarea name="message" required placeholder="Your Message" rows="5" class="form-input interactable"></textarea>
+          
+          <!-- Spam Protection (Honeypot) -->
+          <input type="checkbox" name="botcheck" class="hidden-field" style="display: none;">
+          
+          <button type="submit" class="btn-primary interactable w-100">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+        </form>
+
+        <div class="contact-links">
+          <a href="mailto:fathima.sharfida@email.com" class="social-link interactable">
+            <i class="fa-solid fa-envelope"></i>
+            fathima.sharfida@email.com
+          </a>
+          <a href="https://linkedin.com/in/fathima-sharfida-a-t-6059462b0" target="_blank" class="social-link interactable">
+            <i class="fa-brands fa-linkedin"></i>
+            LinkedIn Profile
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Fathima Sharfida A T. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <!-- GSAP & Three.js Libraries -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
